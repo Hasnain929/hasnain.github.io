@@ -108,7 +108,7 @@ nav {
 
 .nav-hire-btn:hover {
     background: var(--primary);
-    color: #000 !important; /* Text dark ho jayega hover par */
+    color: #000 !important;
     box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
     transform: scale(1.05);
 }
@@ -242,23 +242,23 @@ footer { text-align: center; padding: 40px; opacity: 0.6; font-size: 0.9rem; }
     h1 { font-size: 2.5rem; }
 }
 
-/* Paragraph ke niche gap barhane ke liye */
+
 .contact-description {
-    margin-bottom: 40px; /* Isse email niche ho jayegi */
+    margin-bottom: 40px; 
     line-height: 1.6;
     opacity: 0.9;
 }
 
-/* Email aur Location line ke beech gap */
+
 .info-item {
     margin-bottom: 20px; 
     display: flex;
     align-items: center;
 }
 
-/* "Email:" text ko align aur color dene ke liye */
+
 .info-item strong {
     color: var(--primary);
     margin-right: 15px;
-    min-width: 90px; /* Taake details ek hi line mein rahein */
+    min-width: 90px;
 }
