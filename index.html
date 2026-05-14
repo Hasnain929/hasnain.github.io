@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasnain Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs"></div>
+    
+    <nav>
+    <div class="logo">Hasnain<span> Qureshi</span></div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact" class="nav-hire-btn">Hire Me</a></li>
+    </ul>
+</nav>
+
+    
+<section id="home" class="hero">
+    <div class="hero-content">
+        <span class="badge">Available for Projects</span>
+        <p style="font-size: 1.3rem; color: var(--primary); font-weight: 600; margin-bottom: 10px; letter-spacing: 1px;">
+            Hi, I'm Hasnain Ali Qureshi
+        </p>
+        
+        <h1>Crafting Digital <br><span class="gradient-text">Experiences</span></h1>
+        
+        <p>Web Developer specializing in high-performance websites and custom system administration.</p>
+        
+        <div class="hero-btns">
+            <a href="#projects" class="btn primary">View Portfolio</a>
+            <a href="#contact" class="btn secondary">Hire Me</a>
+        </div>
+    </div>
+</section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            
+            <div class="glass-card">
+                <div class="card-img" style="background-image: url('images/wordpress.png');"></div>
+                <h3>Edu-Gaming Platform</h3>
+                <p>Advanced WordPress integration with custom CSS animations and game cards.</p>
+                <div class="tags"><span>WordPress</span> <span>CSS</span></div>
+                <a href="https://karmuqabla.rf.gd" target="_blank" class="project-link">Live Preview →</a>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-img" style="background-image: url('images/cloudfire.jpg');"></div>
+                <h3>Cloud Infrastructure</h3>
+                <p>AWS CloudPanel setup with optimized security and Cloudflare integration.</p>
+                <div class="tags"><span>AWS</span> <span>DevOps</span></div>
+                <a href="#" class="project-link">View Details →</a>
+            </div>
+
+        </div>
+    </section>
+
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <span class="badge">Get In Touch</span>
+            <h2>Let's Work <br><span class="gradient-text">Together</span></h2>
+            
+            <p class="contact-description">I am currently available for new projects and collaborations. If you have an idea or need help with web development, feel free to reach out through the information below.</p>
+
+            <div class="info-list">
+                <div class="info-item">
+                    <strong>Email:</strong>
+                    <span>hasnainazad929@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <strong>Location:</strong>
+                    <span>Karachi, Pakistan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-glass">
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Tell me about your project" rows="5" required></textarea>
+                <button type="submit" class="btn primary full-width">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+            
+    <div id="projectModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-btn">&times;</span>
+            <h2>Cloud Infrastructure Details</h2>
+            <hr style="border: 0.5px solid var(--glass-border); margin: 15px 0;">
+            <p>I managed and configured the complete server-side architecture for high-performance hosting:</p>
+            <ul class="modal-list">
+                <li><strong>Server:</strong> AWS EC2 Instance with CloudPanel.</li>
+                <li><strong>Security:</strong> Cloudflare DNS, SSL, and WAF integration.</li>
+                <li><strong>Performance:</strong> Optimized PHP & MariaDB for faster load times.</li>
+                <li><strong>Migration:</strong> Seamlessly moved domains from GoDaddy to InfinityFree.</li>
+            </ul>
+            <p style="font-size: 0.8rem; color: var(--primary); opacity: 0.8;">
+                <em>Note: This is a backend infrastructure project with no public dashboard link.</em>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DevPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+    
+</html>
