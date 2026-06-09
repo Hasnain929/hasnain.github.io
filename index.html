@@ -2,119 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasnain Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hasnain Qureshi | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="background-blobs"></div>
     
-    <nav>
-    <div class="logo">Hasnain<span> Qureshi</span></div>
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#contact" class="nav-hire-btn">Hire Me</a></li>
-    </ul>
-</nav>
+    <nav class="glass-nav">
+        <div class="logo">Hasnain<span> Qureshi</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact" class="nav-hire-btn">Hire Me</a></li>
+        </ul>
+    </nav>
 
-    
-<section id="home" class="hero">
-    <div class="hero-content">
-        <span class="badge">Available for Projects</span>
-        <p style="font-size: 1.3rem; color: var(--primary); font-weight: 600; margin-bottom: 10px; letter-spacing: 1px;">
-            Hi, I'm Hasnain Ali Qureshi
-        </p>
-        
-        <h1>Crafting Digital <br><span class="gradient-text">Experiences</span></h1>
-        
-        <p>Web Developer specializing in high-performance websites and custom system administration.</p>
-        
-        <div class="hero-btns">
-            <a href="#projects" class="btn primary">View Portfolio</a>
-            <a href="#contact" class="btn secondary">Hire Me</a>
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <span class="badge">Available for Projects</span>
+            <p class="intro-text">Hi, I'm Hasnain Ali Qureshi</p>
+            <h1>Engineering High-Performance <br><span class="gradient-text">Digital Experiences</span></h1>
+            <p class="hero-desc">Web Developer specializing in custom WordPress theme architecture, cloud system administration, professional audio editing, and advanced MS Office automation.</p>
+            <div class="hero-btns">
+                <a href="HASNAIN-CV.pdf" class="btn primary" download>Download CV</a>
+                <a href="#projects" class="btn primary">View Portfolio</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title" data-aos="fade-down">Core Expertise</h2>
+        <div class="services-grid">
+            <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">🌐</div>
+                <h3>WordPress Management</h3>
+                <p>Custom theme building, plugin integrations, CSS animations, and seamless enterprise content uploading management.</p>
+            </div>
+            <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">🎵</div>
+                <h3>Audio Engineering</h3>
+                <p>Professional audio enhancement, background noise reduction, precise multi-track cutting, and corporate sound mastering.</p>
+            </div>
+            <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">📊</div>
+                <h3>Office Automation</h3>
+                <p>Advanced data formatting, macro setups, complex Excel data manipulation, and executive Word documentation.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title" data-aos="fade-down">Featured Projects</h2>
         <div class="project-grid">
-            
-            <div class="glass-card">
-                <div class="card-img" style="background-image: url('images/wordpress.png');"></div>
+            <div class="glass-card" data-aos="fade-right" data-aos-delay="100">
+                <div class="card-img wp-bg"></div>
                 <h3>Edu-Gaming Platform</h3>
-                <p>Advanced WordPress integration with custom CSS animations and game cards.</p>
+                <p>Advanced WordPress core integration with custom UI/UX glassmorphism aesthetics and active gameplay cards.</p>
                 <div class="tags"><span>WordPress</span> <span>CSS</span></div>
                 <a href="https://karmuqabla.rf.gd" target="_blank" class="project-link">Live Preview →</a>
             </div>
 
-            <div class="glass-card">
-                <div class="card-img" style="background-image: url('images/cloudfire.jpg');"></div>
+            <div class="glass-card" data-aos="fade-left" data-aos-delay="200">
+                <div class="card-img cloud-bg"></div>
                 <h3>Cloud Infrastructure</h3>
-                <p>AWS CloudPanel setup with optimized security and Cloudflare integration.</p>
+                <p>AWS EC2 server setup, custom CloudPanel panel tuning, Cloudflare proxy caching, and server-side security configuration.</p>
                 <div class="tags"><span>AWS</span> <span>DevOps</span></div>
-                <a href="#" class="project-link">View Details →</a>
+                <a href="#" class="project-link open-modal-btn">View Details →</a>
             </div>
-
         </div>
     </section>
 
-<section id="contact" class="contact-section">
-    <div class="contact-container">
-        <div class="contact-info">
-            <span class="badge">Get In Touch</span>
-            <h2>Let's Work <br><span class="gradient-text">Together</span></h2>
-            
-            <p class="contact-description">I am currently available for new projects and collaborations. If you have an idea or need help with web development, feel free to reach out through the information below.</p>
-
-            <div class="info-list">
-                <div class="info-item">
-                    <strong>Email:</strong>
-                    <span>hasnainazad929@gmail.com</span>
-                </div>
-                <div class="info-item">
-                    <strong>Location:</strong>
-                    <span>Karachi, Pakistan</span>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <span class="badge">Get In Touch</span>
+                <h2>Let's Work <br><span class="gradient-text">Together</span></h2>
+                <p class="contact-description">I am currently available for full-time corporate roles, active tech collaborations, and remote operations.</p>
+                <div class="info-list">
+                    <div class="info-item"><strong>Email:</strong> <span>hasnainazad929@gmail.com</span></div>
+                    <div class="info-item"><strong>Location:</strong> <span>Karachi, Pakistan</span></div>
                 </div>
             </div>
+            <div class="contact-form-glass" data-aos="zoom-in" data-aos-delay="300">
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Tell me about your project or job opening..." rows="5" required></textarea>
+                    <button type="submit" class="btn primary full-width">Send Message</button>
+                </form>
+            </div>
         </div>
-
-        <div class="contact-form-glass">
-            <form id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Tell me about your project" rows="5" required></textarea>
-                <button type="submit" class="btn primary full-width">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
+    </section>
             
     <div id="projectModal" class="modal">
         <div class="modal-content glass-card">
             <span class="close-btn">&times;</span>
             <h2>Cloud Infrastructure Details</h2>
-            <hr style="border: 0.5px solid var(--glass-border); margin: 15px 0;">
-            <p>I managed and configured the complete server-side architecture for high-performance hosting:</p>
+            <hr class="modal-divider">
+            <p>I engineered and deployed the cloud hosting workspace for peak load performance:</p>
             <ul class="modal-list">
-                <li><strong>Server:</strong> AWS EC2 Instance with CloudPanel.</li>
-                <li><strong>Security:</strong> Cloudflare DNS, SSL, and WAF integration.</li>
-                <li><strong>Performance:</strong> Optimized PHP & MariaDB for faster load times.</li>
-                <li><strong>Migration:</strong> Seamlessly moved domains from GoDaddy to InfinityFree.</li>
+                <li><strong>Cloud Server:</strong> AWS EC2 computing engine utilizing CloudPanel deployment.</li>
+                <li><strong>Security Matrix:</strong> Secure Cloudflare proxy, automated SSL certificates, and WAF protection rules.</li>
+                <li><strong>Database Tuning:</strong> Custom optimization for PHP runtime environments and MariaDB data queries.</li>
+                <li><strong>Data Migration:</strong> Managed seamless zero-downtime transfers from GoDaddy registers.</li>
             </ul>
-            <p style="font-size: 0.8rem; color: var(--primary); opacity: 0.8;">
-                <em>Note: This is a backend infrastructure project with no public dashboard link.</em>
-            </p>
+            <p class="modal-note"><em>Note: This is an isolated server-side project without a front-end visual client app.</em></p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Hasnain Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Hasnain Qureshi. All rights reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+    </script>
 </body>
-    
 </html>
