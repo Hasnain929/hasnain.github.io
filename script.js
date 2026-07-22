@@ -30,12 +30,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Native Submission Visual Logic
+    // EmailJS Contact Form Logic
     if (contactForm) {
+        emailjs.init('YOUR_EMAILJS_PUBLIC_KEY');
+
         contactForm.addEventListener("submit", (event) => {
             event.preventDefault();
-            alert("Thank you! Your submission has been captured successfully.");
-            contactForm.reset();
+
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', contactForm)
+                .then(() => {
+                    alert("Thank you! Your message has been sent successfully.");
+                    contactForm.reset();
+                }, (error) => {
+                    console.error('EmailJS error:', error);
+                    alert("Something went wrong while sending the message. Please try again later.");
+                });
         });
     }
 });
