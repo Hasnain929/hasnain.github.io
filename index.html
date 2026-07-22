@@ -90,9 +90,9 @@
             </div>
             <div class="contact-form-glass" data-aos="zoom-in" data-aos-delay="300">
                 <form id="contactForm">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Tell me about your project or job opening..." rows="5" required></textarea>
+                    <input type="text" name="from_name" placeholder="Your Name" required>
+                    <input type="email" name="reply_to" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Tell me about your project or job opening..." rows="5" required></textarea>
                     <button type="submit" class="btn primary full-width">Send Message</button>
                 </form>
             </div>
@@ -119,8 +119,6 @@
         <p>&copy; 2026 Hasnain Qureshi. All rights reserved.</p>
     </footer>
 
-</footer>
-
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/923164384336?text=Hello,%20Hasnain Ali Qureshi" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
     <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" aria-hidden="true">
@@ -129,6 +127,7 @@
 </a>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
     <script src="script.js"></script>
     <script>
         AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
